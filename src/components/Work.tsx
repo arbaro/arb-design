@@ -17,7 +17,7 @@ const workEntries = [
       "https://qdkzytxlh7-flywheel.netdna-ssl.com/wp-content/uploads/2018/09/final_BLOCK_ONE_BB_DANIEL_LARIMER_171214_012_retouched-480x480.jpg",
     decHours: 4,
     shares: 5000,
-    notes: "Fucked shit up"
+    notes: "Did awesome stuffs."
   }
 ];
 
