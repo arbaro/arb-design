@@ -10,33 +10,32 @@ const TimeEntry = styled.div`
 `;
 
 const AvatarPicture = styled.img`
-        border-radius: 50%;
-    width: 45px;
-`
+  border-radius: 50%;
+  width: 45px;
+`;
 
-const NotesLabel = styled.div`
-    padding: 5px;
-`
+const NotesLabel = styled.div`padding: 5px;`;
 
 const Center = styled.div`
-    justify-self: center;
+  justify-self: center;
+  align-self: center;
+`;
+
+const DisplayName = styled.h4`
     align-self: center;
 `
 
-const WorkTime = () => (
+const WorkTime = ({ displayName, avatarUrl, decHours, shares, notes }: any) => (
   <TimeEntry>
     <Center>
-      <AvatarPicture
-        src="https://johnwilliamson.io/images/avatar.jpg"
-      />
+      <AvatarPicture src={avatarUrl} />
     </Center>
-    <Center><h4>John Williamson</h4></Center>
-    <Center>0.5</Center>
-    <Center>50</Center>
-    <NotesLabel>
-      Did this and that, I also decided to give old mate a clean way of entering
-      time with formatting which is a nicer thing to do in general.
-    </NotesLabel>
+
+    <DisplayName>{displayName}</DisplayName>
+
+    <Center>{decHours}</Center>
+    <Center>{shares}</Center>
+    <NotesLabel>{notes}</NotesLabel>
   </TimeEntry>
 );
 
